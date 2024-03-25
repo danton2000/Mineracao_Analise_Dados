@@ -19,7 +19,7 @@
 import csv
 
 # Pegando o arquivo utilizando o caminho absuluto
-arquivo = open("C:/Users/181810032/Desktop/Mineracao_Analise_Dados/aula02/cadastro_produtosV1.csv")
+arquivo = open("./aula03/cadastro_produtosV1.csv")
 
 # Colocando todas as informações do arquivo na variavel
 linhas = csv.reader(arquivo)
@@ -27,12 +27,10 @@ linhas = csv.reader(arquivo)
 maior_preco = 0
 menor_preco = 0
 soma = 0
-qtd = 0
+qtd_produto_acima_media = 0
+lista_valores = []
 nome_fruta = ""
 
-lista_frutas = []
-lista_nome_frutas = []
-lista_maior_preco = []
 
 cursor = 0
 
@@ -40,22 +38,31 @@ for linha in linhas:
 
     if cursor > 0:
 
-       pass
-
+        preco = float(linha[2])
+      
+        # Pegando o maior preço
+        if preco > maior_preco:
+            
+            maior_preco = preco
+            
+            menor_preco = preco
         
-
+        # Pegando o menor preço
+        elif menor_preco > preco:
         
-           
-
-
+            menor_preco = preco
         
-    #print(linha)
+        soma = preco + soma
+    
+        nome_fruta = linha[1]
+      
     cursor += 1
 
-print(lista_nome_frutas)
+soma = soma / cursor
 
+lista_valores.append([maior_preco, menor_preco, qtd_produto_acima_media])
 
-    
+print(lista_valores) 
     
 
     
