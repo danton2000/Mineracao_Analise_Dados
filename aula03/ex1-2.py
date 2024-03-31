@@ -30,6 +30,7 @@ lista_qtd_fruta_acima_media = []
 lista_valor_frutas = []
 lista_frutas = []
 cursor = 0
+cursor2 = 0
 
 def verificaMaiorValorFruta(valor_fruta, nome_fruta, index_fruta):
     if valor_fruta > lista_maior_preco[index_fruta]:
@@ -52,9 +53,13 @@ def VerificaValorTotalFruta(index_fruta):
     lista_valor_total_frutas[index_fruta] += float(linha[2])
 
 def verificaMediaFruta(index_fruta):
-    lista_media_preco_frutas[index_fruta] = lista_valor_total_frutas[index_fruta] / lista_qtd_frutas[index_fruta] 
-
-
+    lista_media_preco_frutas[index_fruta] = lista_valor_total_frutas[index_fruta] / lista_qtd_frutas[index_fruta]
+    
+def verificaQuantidadeFrutaAcimaMedia(valor_fruta, index_fruta):
+    if valor_fruta > lista_media_preco_frutas[index_fruta]:
+            
+            lista_qtd_fruta_acima_media[index_fruta] += 1
+     
 for linha in linhas:
 
     if cursor > 0:
@@ -100,10 +105,10 @@ for linha in linhas:
             # Não consegui fazer ...
                  
     cursor += 1
-
+# Fechando a conexão com o arquivo
 arquivo.close()
 
-# Pegando o arquivo utilizando o caminho absuluto
+# Abrindo novamente a conexão com o arquivo, para conseguir interar nele, para saber a qtd de frauta que o valor foi maior que a media
 try:
     arquivo2 = open("./aula03/cadastro_produtosV1.csv")
 except:
@@ -113,28 +118,32 @@ except:
 # Colocando todas as informações do arquivo na variavel
 linhas2 = csv.reader(arquivo2)
 
+# Percorrendo a lista novamente 
 for linha2 in linhas2:
     
-    if cursor > 0:
+    if cursor2 > 0:
         
-        pass
+        # encontrado a fruta que foi repetido
+        index_fruta = lista_frutas.index(linha2[1])
+        
+        #Verifica a qtd de fruta que o valor foi acima da media
+        verificaQuantidadeFrutaAcimaMedia(float(linha2[2]), index_fruta)
+            
+    cursor2 += 1
     
-    
-    cursor += 1
-    
-# print(lista_frutas[13])
+print(lista_frutas[13])
 
-# print(lista_maior_preco[13])
+print(lista_maior_preco[13])
 
-# print(lista_menor_preco[13])
+print(lista_menor_preco[13])
 
-# print(lista_qtd_frutas[13])
+print(lista_qtd_frutas[13])
 
-# print(lista_valor_total_frutas[13])
+print(lista_valor_total_frutas[13])
 
-# print(lista_media_preco_frutas[13])
+print(lista_media_preco_frutas[13])
 
-# print(lista_qtd_fruta_acima_media[13])
+print(lista_qtd_fruta_acima_media[13])
     
 
     
