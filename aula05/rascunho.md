@@ -7,11 +7,15 @@
 
 S = {1,2,3,4,5,6,7,8}
 
-n(omega)
+n(Ω)
 
-P(E) = n(E)/n(omega)
+P(E) = n(E)/n(Ω)
 
 # Propabilidade
+
+Fórmulado da probabilidade
+P(E) = n(E)/n(Ω)
+
 deterministico <- chances expermento -> não deterministrico
 
 # Estatística
@@ -32,11 +36,11 @@ Apresentar o cálculo:
 
 a) 100 %
 
-a) 25 %
+b) 25 %
 
-a) 0 %
+c) 0 %
 
-a) NDA % -> Nenhuma das alteranativas
+d) NDA % -> Nenhuma das alteranativas
 
 S = Espaço
 
@@ -62,8 +66,34 @@ Analise combinatória?
 
 (K, K)
 
-P(E) = N(E)/N(OMEGA)
+P(E) = N(E)/N(Ω)
 
 P(E) = 2/4
 
 P(E) = 1/2 = 0,5 = 50%
+
+--
+3 moedas com o mesmo lado = são 25%
+--
+
+2) Com base em um dado de 6 lados, qual a probabilidade de,
+ao jogalo, que o resultado não seja o numero 5?
+
+a) 66,82% 
+
+b) 83,33% Resposta correta
+
+c) 50% 
+
+d) 16,66%
+
+e) NDA
+
+1/6 = 0,16
+
+100,00 - 16,66
+
+--
+Criar uma base de dados com 500 linhas para cadastro de clientes contendo 
+código, nome, situação cadastral que pode ser ativo ou inativo e 
+uma classe que pode ser pessoa jurídica ou pessoa física.
