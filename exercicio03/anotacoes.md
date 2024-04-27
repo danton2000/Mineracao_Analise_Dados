@@ -7,6 +7,12 @@
     - Id_pedido #Identificador unico do pedido
     - Data_pedido #Data do pedido
     - Status_pedido #Status do pedido
+    - Id_cliente #Identificador unico do cliente(FK)
+    - Id_vendedor #Identificador unico do vendedor(FK)
+
+## Itens
+    - Id_pedido #Identificador unico do pedido
+    - Id_produto #Identificador unico do produto
 
 ## Cliente
     - Id_cliente #Identificador unico do cliente
@@ -26,8 +32,9 @@
     - Observacao_produto #Observacao do produto
 
 ## Estoque
-
-
+    - Id_estoque #Identificador unico do estoque
+    - quantidade_estoque #Quantidade disponivel do produto no estoque
+    - Id_produto #Identificador unico do produto(FK) 
 
 Pedido n ---- 1 Cliente
 Pedido n ---- 1 Vendedor
@@ -49,7 +56,7 @@ Cloudera(base free)
 #### PASSOS
 
 1 - Criar Banco - ok
-2 - Criar Tabelas com suas colunas
+2 - Criar Tabelas com suas colunas - ok
 3 - Criar uma base de amostra que corresponde as tabelas e colunas
     - Chat GPT
 4 - Converter essa base de amostra para o SQL
