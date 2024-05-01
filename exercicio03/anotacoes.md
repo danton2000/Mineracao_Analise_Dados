@@ -50,7 +50,6 @@ Cloudera(base free)
         - Quantidade Produto
         - Valores
         - Quantidade Clientes
-        - Quantidade Produto
         - Vendidos acima do valor médio
 
 #### PASSOS
@@ -60,7 +59,7 @@ Cloudera(base free)
 3 - Criar uma base de amostra que corresponde as tabelas e colunas - ok
 4 - Converter essa base de amostra para o SQL - ok 
 5 - Inserir essas informações no banco - ok
-6 - Rankeamneto(Select) -
+6 - Rankeamneto(Select) - ok
 
 ##### Perguntas feitas pelo CHAT GPT
 Olá, mapeie a seguinte tabela em SQL:
