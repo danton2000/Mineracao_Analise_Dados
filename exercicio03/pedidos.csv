@@ -1,0 +1,6 @@
+id_pedido;data_pedido;status_pedido;id_cliente;id_vendedor
+1;2024-04-25;Em andamento;1;3
+2;2024-04-26;Em andamento;2;1
+3;2024-04-27;Concluído;3;2
+4;2024-04-28;Pendente;4;4
+5;2024-04-29;Em andamento;5;5
