@@ -13,7 +13,13 @@
     -> Limpeza
         -> Exclusão
         -> Preenchimento(Constantes)
-        -> Automaticos
+        -> Automaticos -> Para chegar em um patamar.
     -> Integração
+        -> Comunicação com outros sistemas distintos
     -> Transformação
+        -> Tipo
+        -> Tamanho
+        -> Escopo
     -> Redução
+        -> Amostra
+        -> %
