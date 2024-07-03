@@ -1,5 +1,5 @@
 # Agregações naturais
-
+"""
 A | 250 - 1
 03/05 | LUIS - 2
 B | 250 - 1
@@ -7,10 +7,12 @@ GIG | 5530 - 3
 03/05 | ANA - 2
 07/05 | PEDRO - 2
 SPS | 3058 - 3
+"""
 
 AGRUPADOS POR CLUSTERING
 USANDO HEURISTICOS(PARA DESCOBERTA) DE AGREGAÇÕES NATURAL ENTRE OBJETOS
 
+"""
 GRUPO 1
 A |250
 B | 250
@@ -23,9 +25,10 @@ GRUPO 2
 GRUPO 3
 GIG | 5530
 SPS | 3058
-
+"""
 --------------------------------------
 
+"""
 QTD | IDADE
 1   |   15
 1   |   20
@@ -36,13 +39,15 @@ QTD | IDADE
 3   |   42
 2   |   33
 1   |   51
+"""
 
+"""
 IDADE   | QTD
 0 |--15 | 0
 15|--30 | 7
 30|--45 | 11
 45|--60 | 1
-
+"""
 ----------------------------------------
 
 CLASSIFICAR OS KDD SOB UMA ABORDAGEM BOTTON_UP COM DADOS E PADRÕES ENCONTRADOS
@@ -61,12 +66,12 @@ CRISP-DM -> Serve de apoio ao KDD
             Avaliação(1 exemplo),
             Dsenvolvimento(1 exemplo).
 
-## Exercico
+## Exercicio
 Exemplo da Compreensão do Negocio: Realizar uma reunião com o dono de uma empresa para o entedimento e esclarecimento do negocio desse segmento, para realizar um possivel desenvolvimento de uma solução.
 
 Exemplo da Compreensão do Dados: Realizar um estudo na base de dados e documentar seus objetos, como tabelas de um banco de dados Oracle.
 
-Exemplo da Preparação dos Dados: Realizar a criação de um script, uma procedure SQL/Oracle, que nessa procedure tenha etapas de criação de varias e execução de regras para preparar os dados para um destino.
+Exemplo da Preparação dos Dados: Realizar a criação de um script, uma procedure SQL/Oracle, que nessa procedure tenha etapas de criação de variaveis e execuções de regras para preparar os dados para um destino.
 
 Exemplo da Modelagem: Realizar a criação de um objeto ou tabela no banco de dados Oracle, que contenha as informações e regras de negocio e dados que foram compreendidas em seus estudos. 
 
